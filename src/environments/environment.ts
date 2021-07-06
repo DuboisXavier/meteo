@@ -6,6 +6,7 @@ export const environment = {
   production: false
 };
 
+export let ApiKey = "c0b125896d8a18197a167639b6db4ad2"
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

@@ -1,0 +1,10 @@
+<h2>Condition/ boucle</h2>
+
+<h3> *ngFor </h3>
+<ul *ngFor="let book of bookList">
+    <li>{{book.name | uppercase}}</li>
+</ul>
+
+<h3> *ngIf </h3>
+<p *ngIf="bookList.length >= 3">J'ai minimum 3 livres</p>
+<p *ngIf="bookList.length < 3">J'ai moins de 3 livres</p>

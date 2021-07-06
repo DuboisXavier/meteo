@@ -1,0 +1,15 @@
+<h1>Meteo du jour</h1>
+
+<label for="cityName">City:</label>
+<input id="cityName" type="text" [formControl]="openWeatherCity">
+<button (click)="getCityName()">Validate</button>
+
+<p> {{ openWeatherCity.value }}</p>
+
+
+<div>
+    <h2>details</h2>
+    <p>{{ resultWeather.name }}</p>
+    <p>Temperature : {{ resultWeather.main.temp_min | toCelsuis }} °C</p>
+    <p>Pays : {{ resultWeather.sys.country }}</p>
+</div>
